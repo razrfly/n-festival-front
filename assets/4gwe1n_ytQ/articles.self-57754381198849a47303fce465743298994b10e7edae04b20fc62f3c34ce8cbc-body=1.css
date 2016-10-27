@@ -1,0 +1,143 @@
+/* line 3, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+.article-panel {
+  display: flex;
+  min-height: 200px;
+  color: #f5ef5f;
+  margin-bottom: 20px;
+}
+
+/* line 10, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+.article-link {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+/* line 14, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+.article-link a {
+  color: #f5ef5f;
+}
+
+/* line 19, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+#articles-sidebars .sidenav {
+  background-color: #f5ef5f;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  color: #ffffff;
+}
+/* line 32, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+#articles-sidebars .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+/* line 41, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+#articles-sidebars .sidenav a:hover, #articles-sidebars .offcanvas a:focus {
+  color: #f1f1f1;
+}
+/* line 45, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+#articles-sidebars .sidenav .closebtn {
+  font-size: 36px;
+  color: #ffffff;
+  float: left;
+  margin-left: -110px;
+  position: fixed;
+  top: 50%;
+}
+/* line 54, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+#articles-sidebars .box {
+  padding: 0px 40px 40px 40px;
+  color: #000000;
+}
+
+/* line 60, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  /* line 66, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  /* line 67, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 71, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+  #articles-sidebars .sidenav {
+    padding-top: 50px;
+  }
+  /* line 73, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+  #articles-sidebars .sidenav .closebtn {
+    left: 55%;
+    position: relative;
+    color: #000000;
+  }
+
+  /* line 79, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+  .article-panel {
+    display: block;
+  }
+  /* line 81, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+  .article-panel .image-box {
+    width: 100%;
+  }
+  /* line 83, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+  .article-panel .image-box img {
+    width: 100%;
+  }
+  /* line 88, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+  .article-panel .details-box {
+    width: 100%;
+    border-width: 0px 4px 4px 4px;
+  }
+  /* line 93, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+  .article-panel .article-link {
+    float: none;
+  }
+  /* line 96, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+  .article-panel .image-box.empty {
+    border-width: 4px 4px 4px 4px;
+  }
+}
+/* line 101, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+.image-box {
+  width: 50%;
+}
+/* line 103, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+.image-box img {
+  height: 100%;
+}
+
+/* line 108, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+.image-box.empty {
+  border-width: 4px 0px 4px 4px;
+  border-style: solid;
+}
+
+/* line 112, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+.details-box {
+  position: relative;
+  width: 50%;
+  border-width: 4px 4px 4px 0px;
+  border-style: solid;
+  padding: 10px 20px 10px 20px;
+}
+
+/* line 120, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/articles.scss */
+h1.quote {
+  padding: 15px;
+}

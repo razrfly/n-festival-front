@@ -1,0 +1,100 @@
+/* line 1, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+.venue-panel {
+  position: relative;
+  margin: 30px 0px 30px 0px;
+  min-height: 200px;
+  background-color: #ffffff;
+}
+/* line 6, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+.venue-panel img {
+  width: 100%;
+}
+
+/* line 11, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+.venue-map {
+  margin: 30px 0px 30px 0px;
+}
+
+/* line 15, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+.venue-link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+/* line 20, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+.venue-link a {
+  color: #000000;
+}
+
+/* line 25, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+.map-button {
+  margin-right: 20px;
+}
+
+/* line 29, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+.list-button {
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+/* line 34, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+.nav-buttons {
+  color: #ffffff;
+}
+/* line 37, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+.nav-buttons a {
+  color: #ffffff;
+}
+
+/* line 43, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+#venues-sidebars .sidenav {
+  background-color: #ffffff;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  color: #ffffff;
+}
+/* line 56, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+#venues-sidebars .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+/* line 65, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+#venues-sidebars .sidenav a:hover, #venues-sidebars .offcanvas a:focus {
+  color: #f1f1f1;
+}
+/* line 69, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+#venues-sidebars .sidenav .closebtn {
+  font-size: 36px;
+  color: #ffffff;
+  float: left;
+  margin-left: -110px;
+  position: fixed;
+  top: 50%;
+}
+/* line 78, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+#venues-sidebars .box {
+  padding: 0px 40px 40px 40px;
+  color: #000000;
+}
+@media (max-width: 767px) {
+  /* line 84, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+  #venues-sidebars .sidenav {
+    padding-top: 50px;
+  }
+  /* line 86, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/venues.scss */
+  #venues-sidebars .sidenav .closebtn {
+    left: 55%;
+    position: relative;
+    color: #000000;
+  }
+}

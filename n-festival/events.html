@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>N-Festival</title>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="PGKmsS2J7gv8xzXKCgmzWXIimmpoNXDoWt1YOPBCsPhlY5Bus0EP7J5v648oUaOLdrJccgiPzAE6MQZw96CG7Q==" />
+
+    <link rel="stylesheet" media="all" href="../assets/font-awesome.self-ba26d7069c4256004c0aa2ea43f7e08efc4bf832e297ccb2fd39864e1a70329a-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/bs.self-0272f30eabcb0426d2e324c103b7bd3786f0548db21293f29c5db9bbff3e4b6d-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/leaflet.self-9af37702e0188c8c37fe5632ab7545afdcb9148cbf7cfacc759166c62671b512-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/layout.self-cdb4e0803add8d44a0c1afc9593a031d388c610b7c95d46c7dd1c8ef41b26d70-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/articles.self-57754381198849a47303fce465743298994b10e7edae04b20fc62f3c34ce8cbc-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/events.self-7db94f544909386285c1fd9bb8ba3589c90dd68430d8b968a70bb7703ce62c4a-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/venues.self-86e661af710a84d03d461e49a959927e8241c937f5a67cfaa7bf3d1bc40d443d-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/editions.self-4082575d10a1987b5211c70cb7b19203a4a4280fd30efb4eb9247e2fe8d73b9e-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/pages.self-cb02e1a8ccccca08351fa8f4311f14d02762a5139be0168b50575f50d968f945-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/overrides.self-a1414f0d5458cd633a4ba1cf71ca575f0d2e8e663154d91ba26b9e6610976afd-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/application.self-241a789c33ba295694e83d47b75167f26966dbd5c8e58061bacf17c68c7a12f2-body=1.css" data-turbolinks-track="false" />
+  </head>
+  <body class="events">
+    <nav class="navbar navbar-default navbar-fixed-top hidden-lg hidden-md hidden-sm">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed"
+            data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand" href="../index.html"><img src="../assets/n-fest/logo-74d72870bacf94113b2fa9bf4b697a6b162f97b02865b33545972c327c7b5c88.svg" alt="Logo 74d72870bacf94113b2fa9bf4b697a6b162f97b02865b33545972c327c7b5c88" /></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              <li class="nieuws"><a class="nieuws" href="../articles.html">Nieuws</a></li>
+
+              <li class="programma active"><a class="programma active" href="events.html">Programma</a></li>
+
+              <li class="locaties"><a class="locaties" href="venues.html">Locaties</a></li>
+
+              <li class="info"><a class="info" href="../pages/info.html">Info</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 hidden-xs">
+            <div class="sidemenu">
+  <div id="logo">
+      <a href="../index.html"><img src="../assets/n-fest/letter-n-d8ce3972e4f275f23c2efadfef82b56e1a97456c9189ff2fc4e26b5e5b306763.svg" alt="Letter n d8ce3972e4f275f23c2efadfef82b56e1a97456c9189ff2fc4e26b5e5b306763" /></a>
+  </div>
+  <ul>
+      <li class="nieuws"><a class="nieuws" href="../articles.html">Nieuws</a></li>
+
+      <li class="programma active"><a class="programma active" href="events.html">Programma</a></li>
+
+      <li class="locaties"><a class="locaties" href="venues.html">Locaties</a></li>
+
+      <li class="info"><a class="info" href="../pages/info.html">Info</a></li>
+
+  </ul>
+
+  <div id="lang">
+        <li class="active">
+          <a href="../index.html">nl</a>
+        </li>
+        <li class="">
+          <a href="../index.html">en</a>
+        </li>
+  </div>
+  <div class="details">
+    N-FESTIVAL<br>
+    22-23 APRIL '17<br>
+    A'DAM NOORD
+  </div>
+</div>
+
+          </div>
+          <div class="col-md-9 col-sm-8">
+            <div class="nav-buttons">
+  <div class="nav-button">
+    <h1><a id="locations" href="javascript:void(0)"><i class="fa fa-chevron-up"></i>locatie</a></h1>
+    <div class="search-options locations" data-filter-group="venue">
+        <input type="checkbox" name="Hotel De Goudfazant" id="Hotel_De_Goudfazant" value=".hotel_de_goudfazant" />
+        Hotel De Goudfazant
+        <br>
+        <input type="checkbox" name="Lokovskyhal" id="Lokovskyhal" value=".lokovskyhal" />
+        Lokovskyhal
+        <br>
+        <input type="checkbox" name="Oedipus Brewing" id="Oedipus_Brewing" value=".oedipus_brewing" />
+        Oedipus Brewing
+        <br>
+        <input type="checkbox" name="EYE" id="EYE" value=".eye" />
+        EYE
+        <br>
+        <input type="checkbox" name="Studio Drift" id="Studio_Drift" value=".studio_drift" />
+        Studio Drift
+        <br>
+        <input type="checkbox" name="Tolhuistuin" id="Tolhuistuin" value=".tolhuistuin" />
+        Tolhuistuin
+        <br>
+        <input type="checkbox" name="PUSSY GALORE" id="PUSSY_GALORE" value=".pussy_galore" />
+        PUSSY GALORE
+        <br>
+        <input type="checkbox" name="La Bolleur" id="La_Bolleur" value=".la_bolleur" />
+        La Bolleur
+        <br>
+        <input type="checkbox" name="Hangar" id="Hangar" value=".hangar" />
+        Hangar
+        <br>
+        <input type="checkbox" name="On the Roof" id="On_the_Roof" value=".on_the_roof" />
+        On the Roof
+        <br>
+        <input type="checkbox" name="Halte Zamenhofstraat" id="Halte_Zamenhofstraat" value=".halte_zamenhofstraat" />
+        Halte Zamenhofstraat
+        <br>
+        <input type="checkbox" name="FC Hyena" id="FC_Hyena" value=".fc_hyena" />
+        FC Hyena
+        <br>
+        <input type="checkbox" name="Casco" id="Casco" value=".casco" />
+        Casco
+        <br>
+        <input type="checkbox" name="Café Modern" id="Caf__Modern" value=".café_modern" />
+        Café Modern
+        <br>
+        <input type="checkbox" name="Chocolatemakers" id="Chocolatemakers" value=".chocolatemakers" />
+        Chocolatemakers
+        <br>
+    </div>
+  </div>
+  <div class="nav-button">
+    <h1><a id="tags" href="javascript:void(0)"><i class="fa fa-chevron-up"></i>categorie</a></h1>
+    <div class="search-options tags" data-filter-group="tag">
+        <input type="checkbox" name="workshop" id="workshop" value=".workshop" />
+        workshop
+        <br>
+        <input type="checkbox" name="talkshow" id="talkshow" value=".talkshow" />
+        talkshow
+        <br>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div id="events">
+      <div class="single-event col-md-6 col-sm-12 col-xs-12 talkshow la_bolleur">
+        <div class="event-box">
+          <img class="attachment event avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/5a9c8a17707475f8fbd2eb08ec1285225893551e/store/fill/600/400/fc3b83d05f0218eebafd6c685c5a9fad84c544d523b74f7143713de12f64/byBorre.jpg" alt="Byborre" />
+          <div class="event-text">
+            <h3>Wearable and carryable technology</h3>
+            <h4>Korte Papaverweg 15</h4>
+            <p><p>Borre Akkersdijk is oprichter van modelabel BYBORRE en bouwt voort op het concept van modulaire high-tech kleding. In 2009 studeerde hij af aan de Design Academy in Eindhoven. Hij liep stage bij Lidewij Edelkoort en won in 2012 de MINI Young Designer Award. Tijdens de conferentie SXSW vorig jaar...</p></p>
+          </div>
+
+          <div class="event-link pull-right">
+            <div class="hidden-xs">
+              <a onclick="openNav(&#39;wearable-and-carryable-technology-borre-akkersdijk&#39;, &#39;50%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="hidden-sm hidden-md hidden-lg">
+              <a onclick="openNav(&#39;wearable-and-carryable-technology-borre-akkersdijk&#39;, &#39;100%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-event col-md-6 col-sm-12 col-xs-12 talkshow hotel_de_goudfazant">
+        <div class="event-box">
+          
+          <div class="event-text">
+            <h3>Fashion, Now or Never. And what are we gonna wear?</h3>
+            <h4>Aambeeldstraat 10H, amsterdam</h4>
+            <p><p>Tijdens dit programma staat de vraag centraal welke innovatie er nodig, mogelijk en wellicht al gaande is in het huidige modesysteem om de relatie tussen ontwerper en drager een nieuwe impuls te geven en welke rol beide kunnen spelen het “duurzame consumeren” van mode te stimuleren.<br> De vraag...</p></p>
+          </div>
+
+          <div class="event-link pull-right">
+            <div class="hidden-xs">
+              <a onclick="openNav(&#39;ferdinand-schmeits&#39;, &#39;50%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="hidden-sm hidden-md hidden-lg">
+              <a onclick="openNav(&#39;ferdinand-schmeits&#39;, &#39;100%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-event col-md-6 col-sm-12 col-xs-12 talkshow workshop tolhuistuin">
+        <div class="event-box">
+          
+          <div class="event-text">
+            <h3>Mobile City Dialogues</h3>
+            <h4>IJpromenade 2
+</h4>
+            <p><p>Zij bouwen in New York, Toronto en Amsterdam een netwerk van makers die werken met mobiele technologie om (lokale) verhalen te vertellen. In elke stad zoeken ze, met behulp van hun netwerk en ook met de hulp van de curatoren van het Northside festival en het Endless City Festival, makers,...</p></p>
+          </div>
+
+          <div class="event-link pull-right">
+            <div class="hidden-xs">
+              <a onclick="openNav(&#39;mobile-city-dialogues&#39;, &#39;50%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="hidden-sm hidden-md hidden-lg">
+              <a onclick="openNav(&#39;mobile-city-dialogues&#39;, &#39;100%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-event col-md-6 col-sm-12 col-xs-12 talkshow hotel_de_goudfazant">
+        <div class="event-box">
+          <img class="attachment event avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/27ce644ec75174bcb57e02893dea6eeaa6cd377f/store/fill/600/400/8fe4130092f21bedd6f72261f3550489e3dd2943728f12a59f7056640f74/Queue.jpg" alt="Queue" />
+          <div class="event-text">
+            <h3>Hello Brooklyn</h3>
+            <h4>Aambeeldstraat 10H, amsterdam</h4>
+            <p><p>Scott Stedman begon in 2000 zijn media carrière als schrijver voor het magazine van MIT, Technology Review. Met z’n broer Daniel heeft hij de magazines The L Magazine en later Brooklyn Magazine opgericht. Samen zijn ze ook de oprichters van Northside Festival en inmiddels van de Northside Media...</p></p>
+          </div>
+
+          <div class="event-link pull-right">
+            <div class="hidden-xs">
+              <a onclick="openNav(&#39;hello-brooklyn-northside-media-group&#39;, &#39;50%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="hidden-sm hidden-md hidden-lg">
+              <a onclick="openNav(&#39;hello-brooklyn-northside-media-group&#39;, &#39;100%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-event col-md-6 col-sm-12 col-xs-12 talkshow café_modern">
+        <div class="event-box">
+          <img class="attachment event avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/65806cfd571e96e45a3a89e7f3c1824a5d01f9dd/store/fill/600/400/161b313d3998ceb7d2dc93aa86085804e0b55314d5b02b7919b3f61daa1d/plplpl_pl_scrutiny_close+photo+by+Michel+Boulogne.jpg" alt="Plplpl pl scrutiny close+photo+by+michel+boulogne" />
+          <div class="event-text">
+            <h3>A Guide to the Gentrification Frontline – Joop de Boer (Golfstromen)</h3>
+            <h4>Meidoornweg 2, amsterdam</h4>
+            <p><p>*<em>A Gentrification Battlefield Map schetst de prominente voorhoede van gentrificatie: The Gentrification Frontline. *</em></p> <p>Aan weerszijden van deze frontlinie licht de kaart interessante stadse fenomenen en geografische markeringen uit. Elke kaart is gebaseerd op crowdsourced, mentale kaarten van...</p></p>
+          </div>
+
+          <div class="event-link pull-right">
+            <div class="hidden-xs">
+              <a onclick="openNav(&#39;a-guide-to-the-gentrification-frontline-joop-de-boer-golfstromen&#39;, &#39;50%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="hidden-sm hidden-md hidden-lg">
+              <a onclick="openNav(&#39;a-guide-to-the-gentrification-frontline-joop-de-boer-golfstromen&#39;, &#39;100%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-event col-md-6 col-sm-12 col-xs-12 talkshow halte_zamenhofstraat">
+        <div class="event-box">
+          
+          <div class="event-text">
+            <h3>Radicale Vernieuwers</h3>
+            <h4>Zamenhofstraat 314</h4>
+            <p><p>Naast het verkennen van nieuwe thema’s en het ontwikkelen van nieuwe methodes en interventies, adviseert Chris Sigaloff overheden en organisaties over innovatie strategieën, sociale innovatie en beleid. Ook geeft ze presentaties over deze onderwerpen - in Nederland en in het buitenland. Nora van...</p></p>
+          </div>
+
+          <div class="event-link pull-right">
+            <div class="hidden-xs">
+              <a onclick="openNav(&#39;radicale-vernieuwers&#39;, &#39;50%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="hidden-sm hidden-md hidden-lg">
+              <a onclick="openNav(&#39;radicale-vernieuwers&#39;, &#39;100%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-event col-md-6 col-sm-12 col-xs-12 talkshow eye">
+        <div class="event-box">
+          <img class="attachment event avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/bdf52ecdeb7453e2cfc48e75405ab374d5a05a95/store/fill/600/400/258470786e20f12cc1d8ea7e62e942c6bf67df8b7ff909a58e72e88a0b58/GSuS+Area.jpg" alt="Gsus+area" />
+          <div class="event-text">
+            <h3>Machine Learning</h3>
+            <h4>IJpromenade 1 amsterdam</h4>
+            <p><p>Max Welling is hoogleraar Machine Learning aan de UvA. Hij heeft secundaire benoemingen aan de Universiteit van Californië in Irvine en aan het Canadese Institute for Advanced Research (CIFAR). Hij is medeoprichter van “Scyfer BV” een universitaire spin-off in “deep learning”. Daarnaast is hij...</p></p>
+          </div>
+
+          <div class="event-link pull-right">
+            <div class="hidden-xs">
+              <a onclick="openNav(&#39;machine-learning-max-welling&#39;, &#39;50%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+            </div>
+            <div class="hidden-sm hidden-md hidden-lg">
+              <a onclick="openNav(&#39;machine-learning-max-welling&#39;, &#39;100%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div id="events-sidebars">
+      <div id="wearable-and-carryable-technology-borre-akkersdijk" style="width:50%;">
+  <div class="mySidenav sidenav">
+        <img class="attachment event avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/e1e22ae5be7a087f1409c1153483c41f4c1d20ba/store/fill/900/600/fc3b83d05f0218eebafd6c685c5a9fad84c544d523b74f7143713de12f64/byBorre.jpg" alt="Byborre" />
+    <div class="box">
+      <div class="hidden-xs">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('wearable-and-carryable-technology-borre-akkersdijk')"><i class="fa fa-arrow-right"></i></a>
+      </div>
+      <h1>Wearable and carryable technology</h1>
+      <h2>Korte Papaverweg 15</h2>
+      <p>Borre Akkersdijk is oprichter van modelabel BYBORRE en bouwt voort op het concept van modulaire high-tech kleding. In 2009 studeerde hij af aan de Design Academy in Eindhoven. Hij liep stage bij Lidewij Edelkoort en won in 2012 de MINI Young Designer Award. Tijdens de conferentie SXSW vorig jaar presenteerde Borre Akkersdijk een pak met GPS-tracking, een WiFi hotspot en een muziekbibliotheek, in samenwerking met TU Delft, 22Tracks, Crisp en Daan Spangenberg. Op Northside 2015 presenteerde hij de BB.Suit waarover o.a. Wired een artikel wijdde.</p>
+      <div class="hidden-sm hidden-md hidden-lg">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('wearable-and-carryable-technology-borre-akkersdijk')"><i class="fa fa-times"></i> close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div id="ferdinand-schmeits" style="width:50%;">
+  <div class="mySidenav sidenav">
+    <div class="box">
+      <div class="hidden-xs">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('ferdinand-schmeits')"><i class="fa fa-arrow-right"></i></a>
+      </div>
+      <h1>Fashion, Now or Never. And what are we gonna wear?</h1>
+      <h2>Aambeeldstraat 10H, amsterdam</h2>
+      <p>Tijdens dit programma staat de vraag centraal welke innovatie er nodig, mogelijk en wellicht al gaande is in het huidige modesysteem om de relatie tussen ontwerper en drager een nieuwe impuls te geven en welke rol beide kunnen spelen het “duurzame consumeren” van mode te stimuleren.<br>
+De vraag concentreert zich op mode als sociaal maatschappelijk en cultureel fenomeen, de kleding industrie en diens duurzaamheid zullen niet buiten beschouwing worden gehouden maar is niet het focuspunt. De titel van het programma speelt in op het huidige “falende mode systeem” waarin momentum wordt gecreëerd voor nieuwe tendensen, maar slachtoffer is geworden van haar eigen snelheid.</p>
+      <div class="hidden-sm hidden-md hidden-lg">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('ferdinand-schmeits')"><i class="fa fa-times"></i> close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div id="mobile-city-dialogues" style="width:50%;">
+  <div class="mySidenav sidenav">
+    <div class="box">
+      <div class="hidden-xs">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('mobile-city-dialogues')"><i class="fa fa-arrow-right"></i></a>
+      </div>
+      <h1>Mobile City Dialogues</h1>
+      <h2>IJpromenade 2
+</h2>
+      <p>Zij bouwen in New York, Toronto en Amsterdam een netwerk van makers die werken met mobiele technologie om (lokale) verhalen te vertellen. In elke stad zoeken ze, met behulp van hun netwerk en ook met de hulp van de curatoren van het Northside festival en het Endless City Festival, makers, verhalenvertellers, app-bouwers en media professionals die met ons mee willen denken hoe lokale verhalen verteld kunnen worden met behulp van mobiele technologie. Denk aan audio-tours met GPS op je telefoon, aan een verhaal op een specifieke locatie, aan een fysieke ontmoeting door mobiele technologie. Alles mag, mits je door middel van de technologie gebruik maakt van de locatie, bewust bent van waar je bent en iets doet op of leert over die locatie.</p>
+      <div class="hidden-sm hidden-md hidden-lg">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('mobile-city-dialogues')"><i class="fa fa-times"></i> close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div id="hello-brooklyn-northside-media-group" style="width:50%;">
+  <div class="mySidenav sidenav">
+        <img class="attachment event avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/a247e1e3fdb33dd4b33d89aa9e05d473ca68a359/store/fill/900/600/8fe4130092f21bedd6f72261f3550489e3dd2943728f12a59f7056640f74/Queue.jpg" alt="Queue" />
+    <div class="box">
+      <div class="hidden-xs">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('hello-brooklyn-northside-media-group')"><i class="fa fa-arrow-right"></i></a>
+      </div>
+      <h1>Hello Brooklyn</h1>
+      <h2>Aambeeldstraat 10H, amsterdam</h2>
+      <p>Scott Stedman begon in 2000 zijn media carrière als schrijver voor het magazine van MIT, Technology Review. Met z’n broer Daniel heeft hij de magazines The L Magazine en later Brooklyn Magazine opgericht. Samen zijn ze ook de oprichters van Northside Festival en inmiddels van de Northside Media Group. Scott Stedman is ook lid van de organisaties Greenpoint YMCA en Open Space Alliance.</p>
+      <div class="hidden-sm hidden-md hidden-lg">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('hello-brooklyn-northside-media-group')"><i class="fa fa-times"></i> close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div id="a-guide-to-the-gentrification-frontline-joop-de-boer-golfstromen" style="width:50%;">
+  <div class="mySidenav sidenav">
+        <img class="attachment event avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/e9e03cd1bcf788285c9474839dbdff3e8c287e63/store/fill/900/600/161b313d3998ceb7d2dc93aa86085804e0b55314d5b02b7919b3f61daa1d/plplpl_pl_scrutiny_close+photo+by+Michel+Boulogne.jpg" alt="Plplpl pl scrutiny close+photo+by+michel+boulogne" />
+    <div class="box">
+      <div class="hidden-xs">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('a-guide-to-the-gentrification-frontline-joop-de-boer-golfstromen')"><i class="fa fa-arrow-right"></i></a>
+      </div>
+      <h1>A Guide to the Gentrification Frontline – Joop de Boer (Golfstromen)</h1>
+      <h2>Meidoornweg 2, amsterdam</h2>
+      <p>*<em>A Gentrification Battlefield Map schetst de prominente voorhoede van gentrificatie: The Gentrification Frontline. *</em></p>
+
+<p>Aan weerszijden van deze frontlinie licht de kaart interessante stadse fenomenen en geografische markeringen uit. Elke kaart is gebaseerd op crowdsourced, mentale kaarten van lokale burgers, alsmede op inzichten en observaties van een lokale insider. Op alle drie de festivals geeft Joop de Boer een presentatie over The Gentrification Frontline. Dit verhaal zal de lokale voorhoede van gentrificatie in perspectief zetten met de andere twee steden. De visueel geïllustreerde Keynote lezing brengt de meest interessante verhalen van de verschillende ‘veldslagen’ live ten gehore en ontlokt hiermee een debat.</p>
+
+<blockquote>
+<p>De visueel geïllustreerde Keynote lezing brengt de meest interessante verhalen van de verschillende ‘veldslagen’ live ten gehore en ontlokt hiermee een debat.</p>
+</blockquote>
+      <div class="hidden-sm hidden-md hidden-lg">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('a-guide-to-the-gentrification-frontline-joop-de-boer-golfstromen')"><i class="fa fa-times"></i> close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div id="radicale-vernieuwers" style="width:50%;">
+  <div class="mySidenav sidenav">
+    <div class="box">
+      <div class="hidden-xs">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('radicale-vernieuwers')"><i class="fa fa-arrow-right"></i></a>
+      </div>
+      <h1>Radicale Vernieuwers</h1>
+      <h2>Zamenhofstraat 314</h2>
+      <p>Naast het verkennen van nieuwe thema’s en het ontwikkelen van nieuwe methodes en interventies, adviseert Chris Sigaloff overheden en organisaties over innovatie strategieën, sociale innovatie en beleid. Ook geeft ze presentaties over deze onderwerpen - in Nederland en in het buitenland. Nora van der Linden is binnen Kennisland projectleider van Radicale vernieuwers en de Social Innovation Safari, waarbij de grootste uitdaging is om nieuwe aanpakken te ontwikkelen voor complexe maatschappelijk vraagstukken.</p>
+      <div class="hidden-sm hidden-md hidden-lg">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('radicale-vernieuwers')"><i class="fa fa-times"></i> close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div id="machine-learning-max-welling" style="width:50%;">
+  <div class="mySidenav sidenav">
+        <img class="attachment event avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/83adb41dbf5b7ff439d70d3b5c9d545c23bce82f/store/fill/900/600/258470786e20f12cc1d8ea7e62e942c6bf67df8b7ff909a58e72e88a0b58/GSuS+Area.jpg" alt="Gsus+area" />
+    <div class="box">
+      <div class="hidden-xs">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('machine-learning-max-welling')"><i class="fa fa-arrow-right"></i></a>
+      </div>
+      <h1>Machine Learning</h1>
+      <h2>IJpromenade 1 amsterdam</h2>
+      <p>Max Welling is hoogleraar Machine Learning aan de UvA. Hij heeft secundaire benoemingen aan de Universiteit van Californië in Irvine en aan het Canadese Institute for Advanced Research (CIFAR). Hij is medeoprichter van “Scyfer BV” een universitaire spin-off in “deep learning”. Daarnaast is hij verbonden aan De Amsterdamse Machine Learning Lab (AMLab).</p>
+      <div class="hidden-sm hidden-md hidden-lg">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('machine-learning-max-welling')"><i class="fa fa-times"></i> close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+    <script src="../assets/jquery/dist/jquery.self-a4777c1acac0a74340755725342901a54ed000955bf6f5320491b8b2514c86ec-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/jquery_ujs.self-fe3d68f0432de85c683f75c41041b1ce297adaad1001619a0f216f0ac6d08b49-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/leaflet.self-02d9ac08a439060bb0e79e0d1b98b4ab0a3a75e5690e7a747a6ebcb8affd814a-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/isotope/jquery.isotope.self-e439f4773a5a57af14e4afb4bc7d6093820398a6eef6b064d4ce642ba4b87b85-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/4gwe1n_ytQ/sidebars.self-1fd6a4b81c4877153e3b02c27531a171bc7aa13344f5b3ffb1379933636d8228-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/4gwe1n_ytQ/n_map.self-2957f5ae7875bb7f927b827feb610e9d595fb8c00d287f52798f29bba2655256-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/4gwe1n_ytQ/venues.self-e592ae869a1ea72a26fbe0b5a12f94370553b325d65554e9d66fb1a4229696b8-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/4gwe1n_ytQ/events.self-8c323b361da45361873367e691921dee802533e944fa610b34ea0b985f98f584-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/4gwe1n_ytQ/filters.self-94afd8e9429cc48d57c89ca532c244efb9a68d070f6f756de598402b4a8e605f-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/4gwe1n_ytQ/markdown.self-98a04a37d570ce194b29afbac65a48eca49e30ce79b03364e8164dc13cae5905-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/4gwe1n_ytQ/application.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d-body=1.js" data-turbolinks-track="false"></script>
+  </body>
+</html>

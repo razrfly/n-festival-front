@@ -1,0 +1,101 @@
+/* line 3, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/events.scss */
+.event-link {
+  position: relative;
+  bottom: 22px;
+  right: 5px;
+}
+/* line 8, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/events.scss */
+.event-link a {
+  color: #000000;
+}
+
+/* line 13, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/events.scss */
+.event-box {
+  background-color: #ffffff;
+}
+/* line 15, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/events.scss */
+.event-box img {
+  width: 100%;
+}
+
+/* line 21, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/events.scss */
+.event-text {
+  padding: 1px 20px 10px 20px;
+}
+
+/* line 25, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/events.scss */
+.single-event {
+  -webkit-transition: width 0.5s, height 0.5s, -webkit-transform 0.5s;
+  /* Safari */
+  -moz-transition: width 0.5s, height 0.5s, transform 0.5s;
+  /* Mozilla */
+  transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+
+/* line 32, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/events.scss */
+#events-sidebars .sidenav {
+  background-color: #ffffff;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  color: #ffffff;
+}
+/* line 45, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/events.scss */
+#events-sidebars .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+/* line 54, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/events.scss */
+#events-sidebars .sidenav a:hover, #events-sidebars .offcanvas a:focus {
+  color: #f1f1f1;
+}
+/* line 58, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/events.scss */
+#events-sidebars .sidenav .closebtn {
+  font-size: 36px;
+  color: #ffffff;
+  float: left;
+  margin-left: -110px;
+  position: fixed;
+  top: 50%;
+}
+/* line 67, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/events.scss */
+#events-sidebars .box {
+  padding: 0px 40px 40px 40px;
+  color: #000000;
+}
+
+/* line 73, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/events.scss */
+.search-options {
+  color: #ffffff;
+  background-color: black;
+  width: 102%;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  /* line 81, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/events.scss */
+  #events-sidebars .sidenav {
+    padding-top: 50px;
+  }
+  /* line 83, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/events.scss */
+  #events-sidebars .sidenav .closebtn {
+    left: 55%;
+    position: relative;
+    color: #1b1bc6;
+  }
+}
+@media (max-width: 992px) {
+  /* line 92, /Users/coder1991/RazorflyWork/festiment/app/assets/stylesheets/4gwe1n_ytQ/events.scss */
+  .event-box {
+    margin-bottom: 30px;
+  }
+}

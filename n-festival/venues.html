@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>N-Festival</title>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="PZAbOH6iYcEyXE1InsZlkyGmp/3Df+sHljS2KeKhWJhkkS3n4GqAJlD0kw28nnVBJTZh5aPFV+722Ohh5UNujQ==" />
+
+    <link rel="stylesheet" media="all" href="../assets/font-awesome.self-ba26d7069c4256004c0aa2ea43f7e08efc4bf832e297ccb2fd39864e1a70329a-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/bs.self-0272f30eabcb0426d2e324c103b7bd3786f0548db21293f29c5db9bbff3e4b6d-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/leaflet.self-9af37702e0188c8c37fe5632ab7545afdcb9148cbf7cfacc759166c62671b512-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/layout.self-cdb4e0803add8d44a0c1afc9593a031d388c610b7c95d46c7dd1c8ef41b26d70-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/articles.self-57754381198849a47303fce465743298994b10e7edae04b20fc62f3c34ce8cbc-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/events.self-7db94f544909386285c1fd9bb8ba3589c90dd68430d8b968a70bb7703ce62c4a-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/venues.self-86e661af710a84d03d461e49a959927e8241c937f5a67cfaa7bf3d1bc40d443d-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/editions.self-4082575d10a1987b5211c70cb7b19203a4a4280fd30efb4eb9247e2fe8d73b9e-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/pages.self-cb02e1a8ccccca08351fa8f4311f14d02762a5139be0168b50575f50d968f945-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/overrides.self-a1414f0d5458cd633a4ba1cf71ca575f0d2e8e663154d91ba26b9e6610976afd-body=1.css" data-turbolinks-track="false" />
+<link rel="stylesheet" media="all" href="../assets/4gwe1n_ytQ/application.self-241a789c33ba295694e83d47b75167f26966dbd5c8e58061bacf17c68c7a12f2-body=1.css" data-turbolinks-track="false" />
+  </head>
+  <body class="venues">
+    <nav class="navbar navbar-default navbar-fixed-top hidden-lg hidden-md hidden-sm">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed"
+            data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand" href="../index.html"><img src="../assets/n-fest/logo-74d72870bacf94113b2fa9bf4b697a6b162f97b02865b33545972c327c7b5c88.svg" alt="Logo 74d72870bacf94113b2fa9bf4b697a6b162f97b02865b33545972c327c7b5c88" /></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              <li class="nieuws"><a class="nieuws" href="../articles.html">Nieuws</a></li>
+
+              <li class="programma"><a class="programma" href="events.html">Programma</a></li>
+
+              <li class="locaties active"><a class="locaties active" href="venues.html">Locaties</a></li>
+
+              <li class="info"><a class="info" href="../pages/info.html">Info</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+          <div>
+      <div id="map" data-lat="52.3702157" data-lng="4.8951679" data-venues="[{&quot;name&quot;:&quot;Café Modern&quot;,&quot;address&quot;:&quot;Meidoornweg 2, amsterdam&quot;,&quot;content&quot;:&quot;\u003cp\u003eCafé Modern is een restaurant dat huist in een oud bankgebouw in de Van der Pekbuurt. Op de bovenverdiepingen zit ‘boutiquehotel’ Sweet Dreamz en overdag verandert de zaak in lunchrestaurant Jacques Jour. \u003c/p\u003e&quot;,&quot;lat&quot;:52.3864683,&quot;lng&quot;:4.909009},{&quot;name&quot;:&quot;Hotel De Goudfazant&quot;,&quot;address&quot;:&quot;Aambeeldstraat 10H, amsterdam&quot;,&quot;content&quot;:&quot;&quot;,&quot;lat&quot;:52.3844903,&quot;lng&quot;:4.927385},{&quot;name&quot;:&quot;Tolhuistuin&quot;,&quot;address&quot;:&quot;IJpromenade 2\r\n&quot;,&quot;content&quot;:&quot;\u003cp\u003eMet verschillende partners, waaronder Paradiso en het restaurant THT, is de Tolhuistuin uitgegroeid tot wat ‘ie nu is: een culturele, kunstzinnige en culinaire broed- en ontmoetingsplaats in het nieuwe hart van Amsterdam. De Tolhuistuin bestaat uit een groot publieksgebouw, een tuin (park) en vier karakteristieke bedrijfsverzamelgebouwen.\u003c/p\u003e&quot;,&quot;lat&quot;:52.3833385,&quot;lng&quot;:4.9031187},{&quot;name&quot;:&quot;La Bolleur&quot;,&quot;address&quot;:&quot;Korte Papaverweg 15&quot;,&quot;content&quot;:&quot;\u003cp\u003eLa Bolleur is een multidisciplinaire designstudio die is opgericht door een aantal enthousiaste ontwerpers, allen oud studenten van de Design Academy Eindhoven. Het doel is om een mooiere wereld te creëren vanuit hun creativiteit.\u003c/p\u003e&quot;,&quot;lat&quot;:52.3940804,&quot;lng&quot;:4.9111306},{&quot;name&quot;:&quot;Halte Zamenhofstraat&quot;,&quot;address&quot;:&quot;Zamenhofstraat 314&quot;,&quot;content&quot;:&quot;\u003cp\u003eEen bedrijvencomplex gelegen tussen de Albemarle en het Vogeldorp in Amsterdam-Noord met ruim 200 ondernemers, van beeldend kunstenaar tot barista. Halte Zamenhofstraat is een creatief ondernemers- en kunstenaars complex met een interessante rafelrand met de typische sfeer van Amsterdam-Noordse rommelig- en bedrijvigheid.\u003c/p\u003e&quot;,&quot;lat&quot;:52.3869251,&quot;lng&quot;:4.9309248},{&quot;name&quot;:&quot;EYE&quot;,&quot;address&quot;:&quot;IJpromenade 1 amsterdam&quot;,&quot;content&quot;:&quot;\u003cp\u003eEYE Filmmuseum heeft 4 filmzalen, een grote ruimte voor wisselende tentoonstellingen, de EYE shop, een bar-restaurant en de permanente presentatie in het Panorama. Een gebouw met filmisch uitzicht op het IJ. In de expositieruimte van EYE zijn internationaal toonaangevende tentoonstellingen te zien.\u003c/p\u003e&quot;,&quot;lat&quot;:52.3837448,&quot;lng&quot;:4.9022792}]" />
+     </div>
+
+    <div id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 hidden-xs">
+            <div class="sidemenu">
+  <div id="logo">
+      <a href="../index.html"><img src="../assets/n-fest/letter-n-d8ce3972e4f275f23c2efadfef82b56e1a97456c9189ff2fc4e26b5e5b306763.svg" alt="Letter n d8ce3972e4f275f23c2efadfef82b56e1a97456c9189ff2fc4e26b5e5b306763" /></a>
+  </div>
+  <ul>
+      <li class="nieuws"><a class="nieuws" href="../articles.html">Nieuws</a></li>
+
+      <li class="programma"><a class="programma" href="events.html">Programma</a></li>
+
+      <li class="locaties active"><a class="locaties active" href="venues.html">Locaties</a></li>
+
+      <li class="info"><a class="info" href="../pages/info.html">Info</a></li>
+
+  </ul>
+
+  <div id="lang">
+        <li class="active">
+          <a href="../index.html">nl</a>
+        </li>
+        <li class="">
+          <a href="../index.html">en</a>
+        </li>
+  </div>
+  <div class="details">
+    N-FESTIVAL<br>
+    22-23 APRIL '17<br>
+    A'DAM NOORD
+  </div>
+</div>
+
+          </div>
+          <div class="col-md-9 col-sm-8">
+            <div class="nav-buttons">
+  <div class="map-button">
+    <h1><a href="javascript:void(0)">kaart</a></h1>
+  </div>
+  <h1>/</h1>
+  <div class="list-button">
+    <h1><a href="javascript:void(0)">lijst</a></h1>
+  </div>
+</div>
+
+<div class="venue-map">
+</div>
+
+<div id="venue-list">
+    <div class="venue-panel">
+      <div class="row">
+        <div class="col-md-6">
+            <img class="attachment venue avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/54d0958735a0be1fe86b49be8991dab56061f4c0/store/fill/500/300/2e01b73eab59de64cfecab38a27e95f77ebdfb3680c1cd4162b4d24b9972/Cafe_Modern---Copyright-Janus-van-den-Eijnden-%282%29%281%29.png" alt="Cafe modern   copyright janus van den eijnden %282%29%281%29" />
+        </div>
+        <div class="col-md-6">
+          <h3>Café Modern</h3>
+          <h4>Meidoornweg 2, amsterdam</h4>
+          <h4>
+            <p>Café Modern is een restaurant dat huist in een oud bankgebouw in de Van der Pekbuurt. Op de...</p>
+          </h4>
+        </div>
+
+        <div class="venue-link">
+          <div class="hidden-xs">
+            <a onclick="openNav(&#39;cafe-modern&#39;, &#39;50%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+          </div>
+          <div class="hidden-sm hidden-md hidden-lg">
+            <a onclick="openNav(&#39;cafe-modern&#39;, &#39;100%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="venue-panel">
+      <div class="row">
+        <div class="col-md-6">
+            <img class="attachment venue avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/ee287ccf21cc9d2400f961930ad47a4d2e92bb08/store/fill/500/300/4bd472b067296fb6dba06083bfb7e1c5cf9906ce4c1ac35faddf54e45469/Goudfazant-zaal2-300x134.png" alt="Goudfazant zaal2 300x134" />
+        </div>
+        <div class="col-md-6">
+          <h3>Hotel De Goudfazant</h3>
+          <h4>Aambeeldstraat 10H, amsterdam</h4>
+          <h4>
+
+          </h4>
+        </div>
+
+        <div class="venue-link">
+          <div class="hidden-xs">
+            <a onclick="openNav(&#39;hoteldegoudfazant&#39;, &#39;50%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+          </div>
+          <div class="hidden-sm hidden-md hidden-lg">
+            <a onclick="openNav(&#39;hoteldegoudfazant&#39;, &#39;100%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="venue-panel">
+      <div class="row">
+        <div class="col-md-6">
+            <img class="attachment venue avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/71549532feb33d6d282314cbee84e0ba2f9d03c6/store/fill/500/300/83038475841dd0c27b0e8cfec2e604f4ca5665f84748beec663983f07cec/Tolhuistuin.jpg" alt="Tolhuistuin" />
+        </div>
+        <div class="col-md-6">
+          <h3>Tolhuistuin</h3>
+          <h4>IJpromenade 2
+</h4>
+          <h4>
+            <p>Met verschillende partners, waaronder Paradiso en het restaurant THT, is de Tolhuistuin...</p>
+          </h4>
+        </div>
+
+        <div class="venue-link">
+          <div class="hidden-xs">
+            <a onclick="openNav(&#39;tolhuistuin&#39;, &#39;50%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+          </div>
+          <div class="hidden-sm hidden-md hidden-lg">
+            <a onclick="openNav(&#39;tolhuistuin&#39;, &#39;100%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="venue-panel">
+      <div class="row">
+        <div class="col-md-6">
+            <img class="attachment venue avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/9de99b59971d06a51a24b271f632df85210e0856/store/fill/500/300/718e6b71a1df7894d3d7bf9c1f1b195bf145f970bc9e1fde7e23fc9aa7c7/la_bolleur_balloon_animals-12-640x360.jpg" alt="La bolleur balloon animals 12 640x360" />
+        </div>
+        <div class="col-md-6">
+          <h3>La Bolleur</h3>
+          <h4>Korte Papaverweg 15</h4>
+          <h4>
+            <p>La Bolleur is een multidisciplinaire designstudio die is opgericht door een aantal enthousiaste...</p>
+          </h4>
+        </div>
+
+        <div class="venue-link">
+          <div class="hidden-xs">
+            <a onclick="openNav(&#39;la-bolleur&#39;, &#39;50%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+          </div>
+          <div class="hidden-sm hidden-md hidden-lg">
+            <a onclick="openNav(&#39;la-bolleur&#39;, &#39;100%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="venue-panel">
+      <div class="row">
+        <div class="col-md-6">
+            <img class="attachment venue avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/6d5025d123c46e7e10d8b07be6528e528fbdaa0d/store/fill/500/300/befafabfa0bb93f6acd2ccb26a034fe85bb0109689d09fd59814ef0f169f/Halte+Zamenhofstraat.JPG" alt="Halte+zamenhofstraat" />
+        </div>
+        <div class="col-md-6">
+          <h3>Halte Zamenhofstraat</h3>
+          <h4>Zamenhofstraat 314</h4>
+          <h4>
+            <p>Een bedrijvencomplex gelegen tussen de Albemarle en het Vogeldorp in Amsterdam-Noord met ruim 200...</p>
+          </h4>
+        </div>
+
+        <div class="venue-link">
+          <div class="hidden-xs">
+            <a onclick="openNav(&#39;halte-zamenhofstraat&#39;, &#39;50%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+          </div>
+          <div class="hidden-sm hidden-md hidden-lg">
+            <a onclick="openNav(&#39;halte-zamenhofstraat&#39;, &#39;100%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="venue-panel">
+      <div class="row">
+        <div class="col-md-6">
+            <img class="attachment venue avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/e95d25d5e91a0f531d2c0ed3223d0d77c430054b/store/fill/500/300/aca93956c3d7f1c1c23a350fe6ac85360bd120b0fa7d64e30d6e3b59f590/EYE-Arena-verlicht.jpg" alt="Eye arena verlicht" />
+        </div>
+        <div class="col-md-6">
+          <h3>EYE</h3>
+          <h4>IJpromenade 1 amsterdam</h4>
+          <h4>
+            <p>EYE Filmmuseum heeft 4 filmzalen, een grote ruimte voor wisselende tentoonstellingen, de EYE...</p>
+          </h4>
+        </div>
+
+        <div class="venue-link">
+          <div class="hidden-xs">
+            <a onclick="openNav(&#39;eye&#39;, &#39;50%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+          </div>
+          <div class="hidden-sm hidden-md hidden-lg">
+            <a onclick="openNav(&#39;eye&#39;, &#39;100%&#39;)" href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+          <div id="venues-sidebars">
+      <div id="cafe-modern" style="width:50%;">
+  <div class="mySidenav sidenav">
+      <img class="attachment venue avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/ca4c860073dce1229266c038dbc8bd9d261440f2/store/fill/900/600/2e01b73eab59de64cfecab38a27e95f77ebdfb3680c1cd4162b4d24b9972/Cafe_Modern---Copyright-Janus-van-den-Eijnden-(2)(1).png" alt="Cafe modern   copyright janus van den eijnden %282%29%281%29" />
+    <div class="box">
+      <div class="hidden-xs">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('cafe-modern')"><i class="fa fa-arrow-right"></i></a>
+      </div>
+      <h1>Café Modern</h1>
+      <h2>Meidoornweg 2, amsterdam</h2>
+      <p>Café Modern is een restaurant dat huist in een oud bankgebouw in de Van der Pekbuurt. Op de bovenverdiepingen zit ‘boutiquehotel’ Sweet Dreamz en overdag verandert de zaak in lunchrestaurant Jacques Jour. </p>
+      <div class="hidden-sm hidden-md hidden-lg">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('cafe-modern')"><i class="fa fa-times"></i> close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div id="hoteldegoudfazant" style="width:50%;">
+  <div class="mySidenav sidenav">
+      <img class="attachment venue avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/136349a5a542accc21e321da57e94497ec2a1eb3/store/fill/900/600/4bd472b067296fb6dba06083bfb7e1c5cf9906ce4c1ac35faddf54e45469/Goudfazant-zaal2-300x134.png" alt="Goudfazant zaal2 300x134" />
+    <div class="box">
+      <div class="hidden-xs">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('hoteldegoudfazant')"><i class="fa fa-arrow-right"></i></a>
+      </div>
+      <h1>Hotel De Goudfazant</h1>
+      <h2>Aambeeldstraat 10H, amsterdam</h2>
+
+      <div class="hidden-sm hidden-md hidden-lg">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('hoteldegoudfazant')"><i class="fa fa-times"></i> close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div id="tolhuistuin" style="width:50%;">
+  <div class="mySidenav sidenav">
+      <img class="attachment venue avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/5e52e5c9a0fc20c51e098979a3de16487418881b/store/fill/900/600/83038475841dd0c27b0e8cfec2e604f4ca5665f84748beec663983f07cec/Tolhuistuin.jpg" alt="Tolhuistuin" />
+    <div class="box">
+      <div class="hidden-xs">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('tolhuistuin')"><i class="fa fa-arrow-right"></i></a>
+      </div>
+      <h1>Tolhuistuin</h1>
+      <h2>IJpromenade 2
+</h2>
+      <p>Met verschillende partners, waaronder Paradiso en het restaurant THT, is de Tolhuistuin uitgegroeid tot wat ‘ie nu is: een culturele, kunstzinnige en culinaire broed- en ontmoetingsplaats in het nieuwe hart van Amsterdam. De Tolhuistuin bestaat uit een groot publieksgebouw, een tuin (park) en vier karakteristieke bedrijfsverzamelgebouwen.</p>
+      <div class="hidden-sm hidden-md hidden-lg">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('tolhuistuin')"><i class="fa fa-times"></i> close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div id="la-bolleur" style="width:50%;">
+  <div class="mySidenav sidenav">
+      <img class="attachment venue avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/a63dce51cd957a94b60e8005452186845a4c0632/store/fill/900/600/718e6b71a1df7894d3d7bf9c1f1b195bf145f970bc9e1fde7e23fc9aa7c7/la_bolleur_balloon_animals-12-640x360.jpg" alt="La bolleur balloon animals 12 640x360" />
+    <div class="box">
+      <div class="hidden-xs">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('la-bolleur')"><i class="fa fa-arrow-right"></i></a>
+      </div>
+      <h1>La Bolleur</h1>
+      <h2>Korte Papaverweg 15</h2>
+      <p>La Bolleur is een multidisciplinaire designstudio die is opgericht door een aantal enthousiaste ontwerpers, allen oud studenten van de Design Academy Eindhoven. Het doel is om een mooiere wereld te creëren vanuit hun creativiteit.</p>
+      <div class="hidden-sm hidden-md hidden-lg">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('la-bolleur')"><i class="fa fa-times"></i> close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div id="halte-zamenhofstraat" style="width:50%;">
+  <div class="mySidenav sidenav">
+      <img class="attachment venue avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/26b50de9911c19cb9065ec86252de8b96d546ee0/store/fill/900/600/befafabfa0bb93f6acd2ccb26a034fe85bb0109689d09fd59814ef0f169f/Halte+Zamenhofstraat.JPG" alt="Halte+zamenhofstraat" />
+    <div class="box">
+      <div class="hidden-xs">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('halte-zamenhofstraat')"><i class="fa fa-arrow-right"></i></a>
+      </div>
+      <h1>Halte Zamenhofstraat</h1>
+      <h2>Zamenhofstraat 314</h2>
+      <p>Een bedrijvencomplex gelegen tussen de Albemarle en het Vogeldorp in Amsterdam-Noord met ruim 200 ondernemers, van beeldend kunstenaar tot barista. Halte Zamenhofstraat is een creatief ondernemers- en kunstenaars complex met een interessante rafelrand met de typische sfeer van Amsterdam-Noordse rommelig- en bedrijvigheid.</p>
+      <div class="hidden-sm hidden-md hidden-lg">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('halte-zamenhofstraat')"><i class="fa fa-times"></i> close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div id="eye" style="width:50%;">
+  <div class="mySidenav sidenav">
+      <img class="attachment venue avatar img-responsive" src="https://d3dmj3acaizhba.cloudfront.net/attachments/0bec05720d8356c7a2897972f18a45e51ec703a4/store/fill/900/600/aca93956c3d7f1c1c23a350fe6ac85360bd120b0fa7d64e30d6e3b59f590/EYE-Arena-verlicht.jpg" alt="Eye arena verlicht" />
+    <div class="box">
+      <div class="hidden-xs">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('eye')"><i class="fa fa-arrow-right"></i></a>
+      </div>
+      <h1>EYE</h1>
+      <h2>IJpromenade 1 amsterdam</h2>
+      <p>EYE Filmmuseum heeft 4 filmzalen, een grote ruimte voor wisselende tentoonstellingen, de EYE shop, een bar-restaurant en de permanente presentatie in het Panorama. Een gebouw met filmisch uitzicht op het IJ. In de expositieruimte van EYE zijn internationaal toonaangevende tentoonstellingen te zien.</p>
+      <div class="hidden-sm hidden-md hidden-lg">
+        <a href="javascript:void(0)" class="closebtn hidden"
+          onclick="closeNav('eye')"><i class="fa fa-times"></i> close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+
+    <script src="../assets/jquery/dist/jquery.self-a4777c1acac0a74340755725342901a54ed000955bf6f5320491b8b2514c86ec-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/jquery_ujs.self-fe3d68f0432de85c683f75c41041b1ce297adaad1001619a0f216f0ac6d08b49-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/leaflet.self-02d9ac08a439060bb0e79e0d1b98b4ab0a3a75e5690e7a747a6ebcb8affd814a-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/isotope/jquery.isotope.self-e439f4773a5a57af14e4afb4bc7d6093820398a6eef6b064d4ce642ba4b87b85-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/4gwe1n_ytQ/sidebars.self-1fd6a4b81c4877153e3b02c27531a171bc7aa13344f5b3ffb1379933636d8228-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/4gwe1n_ytQ/n_map.self-2957f5ae7875bb7f927b827feb610e9d595fb8c00d287f52798f29bba2655256-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/4gwe1n_ytQ/venues.self-e592ae869a1ea72a26fbe0b5a12f94370553b325d65554e9d66fb1a4229696b8-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/4gwe1n_ytQ/events.self-8c323b361da45361873367e691921dee802533e944fa610b34ea0b985f98f584-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/4gwe1n_ytQ/filters.self-94afd8e9429cc48d57c89ca532c244efb9a68d070f6f756de598402b4a8e605f-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/4gwe1n_ytQ/markdown.self-98a04a37d570ce194b29afbac65a48eca49e30ce79b03364e8164dc13cae5905-body=1.js" data-turbolinks-track="false"></script>
+<script src="../assets/4gwe1n_ytQ/application.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d-body=1.js" data-turbolinks-track="false"></script>
+  </body>
+</html>
